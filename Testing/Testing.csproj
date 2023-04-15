@@ -6,4 +6,20 @@
 
 
 
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.32.1" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\StartUp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="wwwroot\StartUp.cs" />
+  </ItemGroup>
 </Project>
